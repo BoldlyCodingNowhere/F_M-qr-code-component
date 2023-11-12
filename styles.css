@@ -25,10 +25,10 @@ desktop: 1440px
 }
 
 body {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 #background {
-  width: 95%;
+  width: 100%;
   height: 800px;
   background-color: var(--l-gray);
   border: 1px solid var(--l-gray);
@@ -83,5 +83,49 @@ p {
   color: var(--g-blue);
   font-weight: 400;
   margin-bottom: 15px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #2b7dfa;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.feet {
+  color: var(--d-blue);
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 375px) {
+  footer {
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    padding: 0 .5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  box-shadow: inset 0 0 0 0 #2b7dfa;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  cursor: pointer;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover {
+  color: #2b7dfa;
+  box-shadow: inset  140px 0 0 0 var(--white);
+  transform: scale(2, 2);
+  
+
 }
 
